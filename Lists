@@ -1,0 +1,132 @@
+#WAP to print marks of student using Lists!!!!
+while True:
+    option = input("Enter your childs name for marks of Grade V-A: ").capitalize()
+    print(option)
+
+    students = ["John", "Aria", "Chloe", "Elena", "Hazel", "Iris", "Luna", "Maya", "Nova", "Liam", "Noah", "Oliver", "Elijah", "James", "Benjamin", "Lucas", "Henry", "Alexander", "Mia", "Sophia", "Amelia", "Harper", "Evelyn", "Ava", "Emma", "Charlotte", "Gianna", "Jack", "Owen", "Levi"]
+
+    John = [45, 28, 25, 48, 33, 32]
+    Aria = [32, 29, 48, 28, 46, 48]
+    Chloe = [42, 27, 43, 38, 26, 25]
+    Elena = [27, 31, 32, 41, 44, 25]
+    Hazel = [42, 31, 47, 45, 47, 42]
+    Iris = [38, 32, 39, 43, 33, 50]
+    Luna = [25, 49, 50, 30, 47, 38]
+    Maya = [35, 33, 29, 31, 49, 35]
+    Nova = [28, 27, 37, 28, 36, 36]
+    Liam = [44, 33, 50, 26, 48, 39]
+    Noah = [42, 28, 37, 27, 42, 34]
+    Oliver = [45, 44, 36, 43, 31, 47]
+    Elijah = [27, 26, 46, 32, 49, 34]
+    James = [27, 32, 28, 37, 33, 39]
+    Benjamin = [45, 36, 30, 36, 36, 31]
+    Lucas = [46, 33, 47, 46, 45, 27]
+    Henry = [44, 45, 30, 42, 48, 32]
+    Alexander = [30, 39, 37, 33, 45, 47]
+    Mia = [42, 32, 46, 35, 49, 49]
+    Sophia = [26, 32, 26, 50, 35, 37]
+    Amelia = [33, 27, 31, 43, 47, 35]
+    Harper = [31, 45, 40, 37, 45, 39]
+    Evelyn = [29, 33, 29, 32, 48, 42]
+    Ava = [42, 33, 48, 43, 38, 43]
+    Emma = [37, 36, 32, 29, 41, 40]
+    Charlotte = [27, 49, 26, 28, 29, 45]
+    Gianna = [30, 50, 46, 38, 44, 27]
+    Jack = [37, 37, 44, 39, 41, 33]
+    Owen = [42, 25, 46, 48, 28, 46]
+    Levi = [42, 49, 33, 49, 45, 35]
+
+    if option == "John":
+        print("Student found!!!")
+        print("marks scored", John)
+    elif option == "Aria":
+        print("Student found!!!")
+        print("marks scored", Aria)
+    elif option == "Chloe":
+        print("Student found!!!")
+        print("marks scored", Chloe)
+    elif option == "Elena":
+        print("Student found!!!")
+        print("marks scored", Elena)
+    elif option == "Hazel":
+        print("Student found!!!")
+        print("marks scored", Hazel)
+    elif option == "Iris":
+        print("Student found!!!")
+        print("marks scored", Iris)
+    elif option == "Luna":
+        print("Student found!!!")
+        print("marks scored", Luna)
+    elif option == "Maya":
+        print("Student found!!!")
+        print("marks scored", Maya)
+    elif option == "Nova":
+        print("Student found!!!")
+        print("marks scored", Nova)
+    elif option == "Liam":
+        print("Student found!!!")
+        print("marks scored", Liam)
+    elif option == "Noah":
+        print("Student found!!!")
+        print("marks scored", Noah)
+    elif option == "Oliver":
+        print("Student found!!!")
+        print("marks scored", Oliver)
+    elif option == "Elijah":
+        print("Student found!!!")
+        print("marks scored", Elijah)
+    elif option == "James":
+        print("Student found!!!")
+        print("marks scored", James)
+    elif option == "Benjamin":
+        print("Student found!!!")
+        print("marks scored", Benjamin)
+    elif option == "Lucas":
+        print("Student found!!!")
+        print("marks scored", Lucas)
+    elif option == "Henry":
+        print("Student found!!!")
+        print("marks scored", Henry)
+    elif option == "Alexander":
+        print("Student found!!!")
+        print("marks scored", Alexander)
+    elif option == "Mia":
+        print("Student found!!!")
+        print("marks scored", Mia)
+    elif option == "Sophia":
+        print("Student found!!!")
+        print("marks scored", Sophia)
+    elif option == "Amelia":
+        print("Student found!!!")
+        print("marks scored", Amelia)
+    elif option == "Harper":
+        print("Student found!!!")
+        print("marks scored", Harper)
+    elif option == "Evelyn":
+        print("Student found!!!")
+        print("marks scored", Evelyn)
+    elif option == "Ava":
+        print("Student found!!!")
+        print("marks scored", Ava)
+    elif option == "Emma":
+        print("Student found!!!")
+        print("marks scored", Emma)
+    elif option == "Charlotte":
+        print("Student found!!!")
+        print("marks scored", Charlotte)
+    elif option == "Gianna":
+        print("Student found!!!")
+        print("marks scored", Gianna)
+    elif option == "Jack":
+        print("Student found!!!")
+        print("marks scored", Jack)
+    elif option == "Owen":
+        print("Student found!!!")
+        print("marks scored", Owen)
+    elif option == "Levi":
+        print("Student found!!!")
+        print("marks scored", Levi)
+    else:
+        print("Student Not Found!!!")
+    print("Thank You For Your Kind Patience, Next Parent pls!!!")
+    print()

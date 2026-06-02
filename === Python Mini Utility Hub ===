@@ -1,0 +1,95 @@
+import random
+
+print("=== Python Mini Utility Hub ===")
+
+while True:
+    print("\nChoose an option:")
+    print("1. Calculator")
+    print("2. Odd or Even Checker")
+    print("3. Voting Eligibility")
+    print("4. Grade Calculator")
+    print("5. Coin Toss")
+    print("6. Dice Roller")
+    print("7. Lucky Number Generator")
+    print("8. Multiplication Table")
+    print("9. BMI Calculator")
+    print("10. Greeting Program")
+    print("11. Exit")
+
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        num1 = float(input("First number: "))
+        num2 = float(input("Second number: "))
+        op = input("Choose (+, -, *, /): ")
+
+        if op == "+":
+            print("Result:", num1 + num2)
+        elif op == "-":
+            print("Result:", num1 - num2)
+        elif op == "*":
+            print("Result:", num1 * num2)
+        elif op == "/":
+            if num2 == 0:
+                print("Cannot divide by zero")
+            else:
+                print("Result:", num1 / num2)
+
+    elif choice == "2":
+        num = int(input("Enter a number: "))
+        if num % 2 == 0:
+            print("Even Number")
+        else:
+            print("Odd Number")
+
+    elif choice == "3":
+        age = int(input("Enter your age: "))
+        if age >= 18:
+            print("You can vote")
+        else:
+            print("You cannot vote")
+
+    elif choice == "4":
+        marks = int(input("Enter marks: "))
+
+        if marks >= 90:
+            print("Grade A")
+        elif marks >= 80:
+            print("Grade B")
+        elif marks >= 70:
+            print("Grade C")
+        elif marks >= 60:
+            print("Grade D")
+        else:
+            print("Grade F")
+
+    elif choice == "5":
+        print("Result:", random.choice(["Heads", "Tails"]))
+
+    elif choice == "6":
+        print("Dice rolled:", random.randint(1, 6))
+
+    elif choice == "7":
+        print("Lucky Number:", random.randint(1, 100))
+
+    elif choice == "8":
+        num = int(input("Enter number: "))
+        for i in range(1, 11):
+            print(f"{num} x {i} = {num * i}")
+
+    elif choice == "9":
+        weight = float(input("Weight (kg): "))
+        height = float(input("Height (m): "))
+        bmi = weight / (height * height)
+        print("BMI =", round(bmi, 2))
+
+    elif choice == "10":
+        name = input("Enter your name: ")
+        print("Hello", name, "! Welcome to Python.")
+
+    elif choice == "11":
+        print("Thank you for using Python Mini Utility Hub!")
+        break
+
+    else:
+        print("Invalid choice. Try again.")

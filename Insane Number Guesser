@@ -1,0 +1,54 @@
+#This is a code of any number guessing
+def Check_Insane(num):
+    # Secretly guides the user through the trick without revealing the math values
+    print("\n[Step 1] Keep your starting number in your head.")
+    print("[Step 2] Multiply that secret number by 2.")
+    print("[Step 3] Add 10 to your new total.")
+    print("[Step 4] Divide this new number by 2.")
+    print("[Step 5] Subtract your original secret number from this result.")
+    
+    # Calculate the mathematical solution behind the scenes
+    ori_num = num
+    num = num * 2
+    num = num + 10
+    num = num / 2
+    final_calculated_ans = int(num - ori_num)
+    
+    # Ask the user for their final result
+    user_ans = int(input("\nWhat is your final answer? "))
+    
+    # Explanations where the input numbers are finally revealed
+    if user_ans == final_calculated_ans:
+        print("\n CORRECT! You followed the steps perfectly!")
+        print(" HOW THE TRICK WORKED WITH YOUR NUMBER:")
+        print(f"1. You entered the secret number: {ori_num}")
+        print(f"2. You multiplied it by 2 to get: {ori_num * 2}")
+        print(f"3. You added 10 to get: {ori_num * 2 + 10}")
+        print(f"4. You divided it by 2 to get: {int((ori_num * 2 + 10) / 2)}")
+        print(f"5. You subtracted your starting number ({ori_num}) from {int((ori_num * 2 + 10) / 2)}, which leaves {final_calculated_ans}!")
+        print("\n THE SECRET:")
+        print("Multiplying by 2 and later dividing by 2 completely deletes your starting number from the equation.")
+        print("The final answer will always be exactly half of whatever number was added in Step 3 (Half of 10 is 5)!\n")
+    else:
+        print("\n WRONG ANSWER! Let's reveal your steps to find the math mistake:")
+        print(f"1. Your starting number was: {ori_num}")
+        print(f"2. Multiplied by 2: {ori_num} * 2 = {ori_num * 2}")
+        print(f"3. Added 10: {ori_num * 2} + 10 = {ori_num * 2 + 10}")
+        print(f"4. Divided by 2: {ori_num * 2 + 10} / 2 = {int((ori_num * 2 + 10) / 2)}")
+        print(f"5. Subtracted your starting number: {int((ori_num * 2 + 10) / 2)} - {ori_num} = {final_calculated_ans}")
+        print(f"\nYour final answer should have been {final_calculated_ans}, but you typed {user_ans}. Check your mental math!\n")
+
+print("Welcome to the Number Guesser!")
+
+# Infinite loop that keeps running until the user selects option 2
+while True:
+    option = int(input("Press 1 to play, press 2 to exit: "))
+    
+    if option == 1:
+        user_num = int(input("Enter a secret starting number: "))
+        Check_Insane(user_num)
+    elif option == 2:
+        print("Thanks for playing! Goodbye!")
+        break  # Safely breaks out of the loop and exits
+    else:
+        print("Invalid choice. Please enter 1 or 2.\n")

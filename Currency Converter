@@ -1,0 +1,108 @@
+import time
+While True:
+    option = int(input("Welcome to the currency conerter, here you can convert (usd,aus,ban,can,chin,euro,hkd,jpy,kwd and myr) in to Indian Rupee, Press 1 to continue and Press 2 to exit (Note!! This Currency converter was made in Made in D-04-M-06-Y-2026, Price may vary): "))
+    def usd_con(usd_val):
+        ind_val = usd_val * 95.76
+        time.sleep(2)
+        print(usd_val, "USD= ", ind_val, "INR")
+    def aus_con(aus_val):
+        ind_val = aus_val * 68.25
+        time.sleep(2)
+        print(aus_val, "AUS= ", ind_val, "INR")
+    def ban_con(ban_val):
+           ind_val = ban_val * 0.78
+           time.sleep(2)
+           print(ban_val, "BAN= ", ind_val, "INR")    
+    def can_con(can_val):
+        ind_val = can_val * 68.78
+        time.sleep(2)
+        print(can_val, "CAN= ", ind_val, "INR")
+    def chin_con(chin_val):
+        ind_val = chin_val * 14.15
+        time.sleep(2)
+        print(chin_val, "CHIN= ", ind_val, "INR")
+    def euro_con(euro_val):
+        ind_val = euro_val * 111.09
+        time.sleep(2)
+        print(euro_val, "EURO= ", ind_val, "INR")
+    def hkd_con(hkd_val):
+        ind_val = hkd_val * 12.22
+        time.sleep(2)
+        print(hkd_val, "HKD= ", ind_val, "INR")
+    def jpy_con(jpy_val):
+        ind_val = jpy_val * 0.60
+        time.sleep(2)
+        print(jpy_val, "JPY= ", ind_val, "INR")
+    def kwd_con(kwd_val):
+        ind_val = kwd_val * 309.96
+        time.sleep(2)
+        print(kwd_val, "KWD= ", ind_val, "INR")
+    def myr_con(myr_val):
+        ind_val = myr_val * 23.91
+        time.sleep(2)
+        print(myr_val, "MYR= ", ind_val, "INR")
+    if option == 2:
+        print("Thank you for your kind patience, Bye Bye!!")
+        break
+    elif option == 1:
+        option2 = int(input('''Please select your current currency'
+        1. Convert USD to INR
+        2. Convert AUS Dollar to INR
+        3. Convert BAN Taka to INR
+        4. Convert CAN Dollar to INR
+        5. Convert CIN Yuan to INR
+        6. Convert EUR Euro to INR
+        7. Convert HKD Dollar to INR
+        8. Convert JPY Yen to INR
+        9. Convert KWD Dinar to INR
+        10. Convert MYR Ringgit to INR
+        Enter Your Input: '''))
+        if option2 == 1:
+            usd_con(int(input("Enter your currency: ")))
+        elif option2 == 2:
+            aus_con(int(input("Enter your currency: ")))
+        elif option2 == 3:
+            ban_con(int(input("Enter your currency: ")))
+        elif option2 == 4:
+            can_con(int(input("Enter your currency: ")))
+        elif option2 == 5:
+            chin_con(int(input("Enter your currency: ")))
+        elif option2 == 6:
+            euro_con(int(input("Enter your currency: ")))
+        elif option2 == 7:
+            hkd_con(int(input("Enter your currency: ")))
+        elif option2 == 8:
+            jpy_con(int(input("Enter your currency: ")))
+        elif option2 == 9:
+            kwd_con(int(input("Enter your currency: ")))
+        elif option2 == 10:
+            myr_con(int(input("Enter your currency: ")))
+        else:
+            print("loading.")
+            time.sleep(1)
+            print("loading..")
+            time.sleep(1)
+            print("loading...")
+            time.sleep(1)
+            print("Invalid Option!!")
+    else:
+        print("loading.")
+        time.sleep(1)
+        print("loading..")
+        time.sleep(1)
+        print("loading...")
+        time.sleep(1)
+        print("Invalid Option!!")
+    
+    
+
+
+
+
+
+
+
+
+
+
+
